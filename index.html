@@ -1,86 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taj Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC Photography</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#111;
-    color:white;
-}
-
-header{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:#000;
-}
-
-h1{
-    font-size:60px;
-}
-
-header p{
-    margin-top:15px;
-    color:#bbb;
-    font-size:20px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
-
-.photo{
-    height:250px;
-    background:#222;
-    border-radius:12px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:22px;
-}
-
-footer{
-    padding:30px;
-    text-align:center;
-    color:#888;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Taj Photography</h1>
-<p>Sports • Mountain Bike • Action Photography</p>
-</header>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TC Photography</div>
 
-<section class="gallery">
-<div class="photo">Photo 1</div>
-<div class="photo">Photo 2</div>
-<div class="photo">Photo 3</div>
-<div class="photo">Photo 4</div>
-</section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gear.html">Gear</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<footer>
-© 2026 Taj Photography
-</footer>
+    <!-- Hero -->
+    <header class="hero">
+        <h1>TC Photography</h1>
+        <p>Capturing Soccer • Mountain Biking • Action</p>
+
+        <a href="gallery.html" class="btn">View Gallery</a>
+    </header>
+
+    <!-- Featured -->
+    <section>
+
+        <h2 class="section-title">Featured Photography</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=900&q=80">
+                <h3>Soccer</h3>
+                <p>Fast-paced action, goals, tackles and match moments.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80">
+                <h3>Mountain Biking</h3>
+                <p>Jumps, trails, downhill and epic riding shots.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
+                <h3>More Photography</h3>
+                <p>Landscapes, sunsets and everything in between.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 TC Photography | Built by Taj
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
