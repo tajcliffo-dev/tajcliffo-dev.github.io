@@ -62,8 +62,14 @@ nav a:hover{
     align-items:center;
     flex-direction:column;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
-    url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1800&q=80");
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.75)
+    ),
+    url("images/pajero.jpg");
+
     background-size:cover;
     background-position:center;
 }
